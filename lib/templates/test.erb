@@ -1,0 +1,11 @@
+require '<%= name %>'
+describe <%= LuckyCase.pascal_case(name) %> do
+  before do
+    @<%= name %> = <%= LuckyCase.pascal_case(name) %>.new 
+  end
+  describe "#initialize" do 
+    it "should exist" do 
+      expect(@<%= name %>).to eq(@<%= name %>)
+    end
+  end
+end
